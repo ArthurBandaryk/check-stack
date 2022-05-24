@@ -1,0 +1,12 @@
+load("@rules_cc//cc:defs.bzl", "cc_library", "cc_test")
+
+cc_test(
+    name = "test-stack-trace",
+    srcs = [
+        "test-stack-trace.cc",
+    ],
+    deps = [
+        "@com_github_google_googletest//:gtest_main",
+        "@com_github_google_glog//:glog",
+    ],
+)
